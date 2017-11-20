@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.Api.Controllers
@@ -33,12 +30,14 @@ namespace ECommerce.Api.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]string value)
         {
+            
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            
         }
     }
 }
