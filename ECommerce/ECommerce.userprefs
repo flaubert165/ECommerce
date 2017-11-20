@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{381C5094-F327-4BC3-A86C-B48818961276}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Api/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce Status">
     <Files>
-      <File FileName="ECommerce.Api/Startup.cs" Line="25" Column="82" />
-      <File FileName="ECommerce.Api/Controllers/ValuesController.cs" Line="16" Column="50" />
+      <File FileName="ECommerce.Api/Controllers/ValuesController.cs" Line="3" Column="19" />
+      <File FileName="ECommerce Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -11,6 +11,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.ECommerce.Api PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.ECommerce.Domain PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>

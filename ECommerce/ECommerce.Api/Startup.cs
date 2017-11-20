@@ -46,6 +46,7 @@ namespace ECommerce.Api
                     await next();
                 }
             });
+
             app.UseMvcWithDefaultRoute();
             app.UseDefaultFiles();
             app.UseStaticFiles();

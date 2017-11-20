@@ -28529,11 +28529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/italosantana/Projects/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj",
+      "projectUniqueName": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj",
       "projectName": "ECommerce.Helpers",
-      "projectPath": "/Users/italosantana/Projects/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj",
+      "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj",
       "packagesPath": "/Users/italosantana/.nuget/packages/",
-      "outputPath": "/Users/italosantana/Projects/ECommerce/ECommerce.Helpers/obj",
+      "outputPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/italosantana/.config/NuGet/NuGet.Config"
