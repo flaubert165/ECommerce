@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{381C5094-F327-4BC3-A86C-B48818961276}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Api/Controllers/ValuesController.cs">
     <Files>
-      <File FileName="ECommerce.Api/Controllers/ValuesController.cs" Line="10" Column="18" />
+      <File FileName="ECommerce.Api/Controllers/ValuesController.cs" Line="5" Column="2" />
       <File FileName="ECommerce.Api/Controllers/AccountController.cs" Line="13" Column="31" />
     </Files>
     <Pads>
@@ -9,13 +9,10 @@
         <State name="__root__">
           <Node name="ECommerce" expanded="True">
             <Node name="ECommerce.Api" expanded="True">
-              <Node name="ECommerce.Api" expanded="True">
-                <Node name="Controllers" expanded="True" />
-              </Node>
+              <Node name="ECommerce.Api" expanded="True" />
             </Node>
-            <Node name="ECommerce.Helpers" expanded="True">
-              <Node name="ECommerce.Helpers" selected="True" />
-            </Node>
+            <Node name="ECommerce.Domain" expanded="True" />
+            <Node name="ECommerce.Helpers" expanded="True" />
             <Node name="ECommerce.Infrastructure" expanded="True" />
           </Node>
         </State>
