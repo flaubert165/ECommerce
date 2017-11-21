@@ -1,23 +1,49 @@
 ﻿using System.Collections.Generic;
 using ECommerce.Domain.Contracts;
 using ECommerce.Domain.Entities;
+using ECommerce.Helpers.Helpers;
+using ECommerce.Infrastructure.Data;
+using System.Linq;
+using System;
 
 namespace ECommerce.Application.Services
 {
     public class UserService : IUserService
     {
-        public UserService()
+        private DataContext _context;
+
+        public UserService(DataContext context)
         {
+            _context = context;
         }
 
         public User Authenticate(string username, string password)
         {
-            throw new System.NotImplementedException();
+            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
+            {
+                var user = _context.Users.SingleOrDefault(x => x.Username == username);
+
+                if(user == null)
+                {
+                    throw new Exception();
+                }
+
+                if (!PasswordHelper.VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
+                {
+                    throw new Exception();
+                }
+
+                return user;
+
+            }else
+            {
+                throw new Exception();   
+            }
         }
 
         public User Create(User user, string password)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public void Delete(int id)
@@ -27,7 +53,7 @@ namespace ECommerce.Application.Services
 
         public IEnumerable<User> GetAll()
         {
-            throw new System.NotImplementedException();
+            return _context.Users;
         }
 
         public User GetById(int id)
