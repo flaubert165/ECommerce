@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.IO;
 using Microsoft.Extensions.Logging;
+using ECommerce.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace ECommerce.Api
 {
@@ -19,6 +21,12 @@ namespace ECommerce.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            var connection = Configuration["DbConnection:MySqlConnectionString"];
+            services.AddDbContext<DataContext>(options =>
+                options.UseMySql(connection)
+            );
+            
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
