@@ -23,7 +23,7 @@ namespace ECommerce.Application.Services
             {
                 var user = _context.Users.SingleOrDefault(x => x.Username == username);
 
-                if(user == null)
+                if (user == null)
                 {
                     throw new Exception();
                 }
@@ -35,9 +35,10 @@ namespace ECommerce.Application.Services
 
                 return user;
 
-            }else
+            }
+            else
             {
-                throw new Exception();   
+                throw new ArgumentNullException();    
             }
         }
 
