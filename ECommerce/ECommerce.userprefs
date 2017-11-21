@@ -1,4 +1,5 @@
 ﻿<Properties StartupConfiguration="{381C5094-F327-4BC3-A86C-B48818961276}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.ECommerce.App.ECommerce.App PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Api/Services/UserService.cs">
     <Files>
       <File FileName="ECommerce.Api/Controllers/ValuesController.cs" Line="19" Column="10" />
@@ -50,6 +51,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.ECommerce.Api PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>

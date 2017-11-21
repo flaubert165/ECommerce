@@ -1,9 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Api", "ECommerce.Api\ECommerce.Api.csproj", "{381C5094-F327-4BC3-A86C-B48818961276}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.App", "ECommerce.Api\ECommerce.App.csproj", "{381C5094-F327-4BC3-A86C-B48818961276}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ECommerce.Api", "ECommerce.Api", "{206E281E-B364-4AB3-BEE6-0ADA995A980A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ECommerce.App", "ECommerce.App", "{206E281E-B364-4AB3-BEE6-0ADA995A980A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ECommerce.Domain", "ECommerce.Domain", "{FC464A0E-9FBF-42B8-9558-DE9EFA4C7592}"
 EndProject
@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ECommerce.Helpers", "EComme
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ECommerce.Infrastructure", "ECommerce.Infrastructure", "{2745F4EF-E84D-4CD5-9F25-C442FC71FFCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Api.Tests", "ECommerce.Api\ECommerce.Api.Tests\ECommerce.Api.Tests.csproj", "{0B8D13F8-9CA8-43BD-B094-85EF2C76618E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.App.Tests", "ECommerce.Api\ECommerce.Api.Tests\ECommerce.App.Tests.csproj", "{0B8D13F8-9CA8-43BD-B094-85EF2C76618E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Domain", "ECommerce.Domain\ECommerce.Domain\ECommerce.Domain.csproj", "{F623CC42-6A0A-4A75-B044-3CD34CDF92C5}"
 EndProject

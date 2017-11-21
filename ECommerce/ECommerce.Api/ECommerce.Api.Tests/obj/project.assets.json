@@ -669,9 +669,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Api/ECommerce.Api.Tests/ECommerce.Api.Tests.csproj",
-      "projectName": "ECommerce.Api.Tests",
-      "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Api/ECommerce.Api.Tests/ECommerce.Api.Tests.csproj",
+      "projectUniqueName": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Api/ECommerce.Api.Tests/ECommerce.App.Tests.csproj",
+      "projectName": "ECommerce.App.Tests",
+      "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Api/ECommerce.Api.Tests/ECommerce.App.Tests.csproj",
       "packagesPath": "/Users/italosantana/.nuget/packages/",
       "outputPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Api/ECommerce.Api.Tests/obj",
       "projectStyle": "PackageReference",
