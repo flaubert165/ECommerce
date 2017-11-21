@@ -6,6 +6,12 @@ using System.IO;
 using Microsoft.Extensions.Logging;
 using ECommerce.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using ECommerce.Domain.Contracts;
+using ECommerce.Application.Services;
+using ECommerce.Helpers;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
 
 namespace ECommerce.Application
 {
@@ -21,12 +27,6 @@ namespace ECommerce.Application
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            var connection = Configuration["DbConnection:MySqlConnectionString"];
-            services.AddDbContext<DataContext>(options =>
-                options.UseMySql(connection)
-            );
-            
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -36,7 +36,38 @@ namespace ECommerce.Application
                     .AllowCredentials());
             });
 
+            // configure strongly typed settings objects
+            var appSettingsSection = Configuration.GetSection("AppSettings");
+            services.Configure<AppSettings>(appSettingsSection);
+
+            // configure jwt authentication
+            var appSettings = appSettingsSection.Get<AppSettings>();
+            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+
+            var connection = Configuration["DbConnection:MySqlConnectionString"];
+            services.AddDbContext<DataContext>(options =>
+                options.UseMySql(connection)
+            );
+            
             services.AddMvc();
+            services.AddScoped<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

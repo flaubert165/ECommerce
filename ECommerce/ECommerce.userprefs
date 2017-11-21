@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{E64702E1-0346-4042-8F51-A3B5F9632398}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Application/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Helpers/AppSettings.cs">
     <Files>
       <File FileName="ECommerce.Application/Controllers/AccountController.cs" Line="8" Column="1" />
       <File FileName="ECommerce.Application/Controllers/ValuesController.cs" Line="6" Column="18" />
-      <File FileName="ECommerce.Application/Services/UserService.cs" Line="7" Column="25" />
-      <File FileName="ECommerce.Application/appsettings.json" Line="18" Column="4" />
-      <File FileName="ECommerce.Application/Startup.cs" Line="12" Column="18" />
+      <File FileName="ECommerce.Application/Services/UserService.cs" Line="10" Column="10" />
+      <File FileName="ECommerce.Application/Startup.cs" Line="33" Column="16" />
+      <File FileName="ECommerce.Infrastructure/Data/DataContext.cs" Line="13" Column="9" />
+      <File FileName="ECommerce.Helpers/AppSettings.cs" Line="5" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
