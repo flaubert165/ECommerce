@@ -196,6 +196,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "ECommerce.Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Helpers.dll": {}
+        }
       }
     }
   },
@@ -656,10 +666,16 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "ECommerce.Helpers/1.0.0": {
+      "type": "project",
+      "path": "../../ECommerce.Helpers/ECommerce.Helpers.csproj",
+      "msbuildProject": "../../ECommerce.Helpers/ECommerce.Helpers.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "ECommerce.Helpers >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -686,7 +702,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj": {
+              "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

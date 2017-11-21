@@ -1,0 +1,8 @@
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/bin/Debug/netcoreapp2.0/ECommerce.Helpers.deps.json
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/bin/Debug/netcoreapp2.0/ECommerce.Helpers.dll
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/bin/Debug/netcoreapp2.0/ECommerce.Helpers.pdb
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/obj/Debug/netcoreapp2.0/ECommerce.Helpers.csproj.CoreCompileInputs.cache
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/obj/Debug/netcoreapp2.0/ECommerce.Helpers.AssemblyInfoInputs.cache
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/obj/Debug/netcoreapp2.0/ECommerce.Helpers.AssemblyInfo.cs
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/obj/Debug/netcoreapp2.0/ECommerce.Helpers.dll
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/obj/Debug/netcoreapp2.0/ECommerce.Helpers.pdb

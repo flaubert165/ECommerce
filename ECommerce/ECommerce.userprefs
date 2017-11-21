@@ -1,50 +1,13 @@
 ﻿<Properties StartupConfiguration="{381C5094-F327-4BC3-A86C-B48818961276}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.ItemProperties.ECommerce.App.ECommerce.App PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Api/Services/UserService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Api/Controllers/ValuesController.cs">
     <Files>
-      <File FileName="ECommerce.Api/Controllers/ValuesController.cs" Line="19" Column="10" />
+      <File FileName="ECommerce.Api/Controllers/ValuesController.cs" Line="10" Column="18" />
       <File FileName="ECommerce.Api/Controllers/AccountController.cs" Line="13" Column="31" />
       <File FileName="ECommerce.Api/Startup.cs" Line="25" Column="57" />
       <File FileName="ECommerce.Infrastructure/Data/DataContext.cs" Line="9" Column="81" />
-      <File FileName="ECommerce.Api/Services/UserService.cs" Line="141" Column="2" />
+      <File FileName="ECommerce.Api/Services/UserService.cs" Line="15" Column="56" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ECommerce" expanded="True">
-            <Node name="ECommerce.Api" expanded="True">
-              <Node name="ECommerce.Api" expanded="True">
-                <Node name="Controllers" expanded="True" />
-                <Node name="Services" expanded="True">
-                  <Node name="UserService.cs" selected="True" />
-                </Node>
-              </Node>
-              <Node name="ECommerce.Api.Tests" expanded="True" />
-            </Node>
-            <Node name="ECommerce.Domain" expanded="True">
-              <Node name="ECommerce.Domain" expanded="True">
-                <Node name="Contracts" expanded="True" />
-              </Node>
-              <Node name="ECommerce.Domain.Tests" expanded="True" />
-            </Node>
-            <Node name="ECommerce.Helpers" expanded="True">
-              <Node name="ECommerce.Helpers" expanded="True" />
-              <Node name="ECommerce.Helpers.Tests" expanded="True" />
-            </Node>
-            <Node name="ECommerce.Infrastructure" expanded="True">
-              <Node name="ECommerce.Infrastructure" expanded="True">
-                <Node name="Data" expanded="True" />
-              </Node>
-              <Node name="ECommerce.Infrastructure.Tests" expanded="True" />
-            </Node>
-            <Node name="ECommerce.Repositories" expanded="True">
-              <Node name="ECommerce.Repositories" expanded="True" />
-              <Node name="ECommerce.Repositories.Tests" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -4859,6 +4859,9 @@
       "ECommerce.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "ECommerce.Helpers": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ECommerce.Domain.dll": {}
         },
@@ -4866,11 +4869,22 @@
           "bin/placeholder/ECommerce.Domain.dll": {}
         }
       },
+      "ECommerce.Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Helpers.dll": {}
+        }
+      },
       "ECommerce.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "ECommerce.Domain": "1.0.0",
+          "ECommerce.Helpers": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "2.0.0"
         },
         "compile": {
@@ -4878,6 +4892,16 @@
         },
         "runtime": {
           "bin/placeholder/ECommerce.Infrastructure.dll": {}
+        }
+      },
+      "ECommerce.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Repositories.dll": {}
         }
       }
     },
@@ -9779,6 +9803,9 @@
       "ECommerce.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "ECommerce.Helpers": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ECommerce.Domain.dll": {}
         },
@@ -9786,11 +9813,22 @@
           "bin/placeholder/ECommerce.Domain.dll": {}
         }
       },
+      "ECommerce.Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Helpers.dll": {}
+        }
+      },
       "ECommerce.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "ECommerce.Domain": "1.0.0",
+          "ECommerce.Helpers": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "2.0.0"
         },
         "compile": {
@@ -9798,6 +9836,16 @@
         },
         "runtime": {
           "bin/placeholder/ECommerce.Infrastructure.dll": {}
+        }
+      },
+      "ECommerce.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Repositories.dll": {}
         }
       }
     },
@@ -14953,6 +15001,9 @@
       "ECommerce.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "ECommerce.Helpers": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ECommerce.Domain.dll": {}
         },
@@ -14960,11 +15011,22 @@
           "bin/placeholder/ECommerce.Domain.dll": {}
         }
       },
+      "ECommerce.Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Helpers.dll": {}
+        }
+      },
       "ECommerce.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "ECommerce.Domain": "1.0.0",
+          "ECommerce.Helpers": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "2.0.0"
         },
         "compile": {
@@ -14972,6 +15034,16 @@
         },
         "runtime": {
           "bin/placeholder/ECommerce.Infrastructure.dll": {}
+        }
+      },
+      "ECommerce.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Repositories.dll": {}
         }
       }
     },
@@ -20127,6 +20199,9 @@
       "ECommerce.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "ECommerce.Helpers": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ECommerce.Domain.dll": {}
         },
@@ -20134,11 +20209,22 @@
           "bin/placeholder/ECommerce.Domain.dll": {}
         }
       },
+      "ECommerce.Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Helpers.dll": {}
+        }
+      },
       "ECommerce.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "ECommerce.Domain": "1.0.0",
+          "ECommerce.Helpers": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "2.0.0"
         },
         "compile": {
@@ -20146,6 +20232,16 @@
         },
         "runtime": {
           "bin/placeholder/ECommerce.Infrastructure.dll": {}
+        }
+      },
+      "ECommerce.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Repositories.dll": {}
         }
       }
     }
@@ -29158,16 +29254,28 @@
       "path": "../ECommerce.Domain/ECommerce.Domain/ECommerce.Domain.csproj",
       "msbuildProject": "../ECommerce.Domain/ECommerce.Domain/ECommerce.Domain.csproj"
     },
+    "ECommerce.Helpers/1.0.0": {
+      "type": "project",
+      "path": "../ECommerce.Helpers/ECommerce.Helpers.csproj",
+      "msbuildProject": "../ECommerce.Helpers/ECommerce.Helpers.csproj"
+    },
     "ECommerce.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../ECommerce.Infrastructure/ECommerce.Infrastructure.csproj",
       "msbuildProject": "../ECommerce.Infrastructure/ECommerce.Infrastructure.csproj"
+    },
+    "ECommerce.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../ECommerce.Repositories/ECommerce.Repositories.csproj",
+      "msbuildProject": "../ECommerce.Repositories/ECommerce.Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "ECommerce.Domain >= 1.0.0",
+      "ECommerce.Helpers >= 1.0.0",
       "ECommerce.Infrastructure >= 1.0.0",
+      "ECommerce.Repositories >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.AspNetCore.Mvc >= 2.0.0",
       "Microsoft.AspNetCore.StaticFiles >= 2.0.0",
@@ -29204,6 +29312,12 @@
             },
             "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj": {
               "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj"
+            },
+            "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj": {
+              "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj"
+            },
+            "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/ECommerce.Repositories.csproj": {
+              "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/ECommerce.Repositories.csproj"
             }
           }
         }

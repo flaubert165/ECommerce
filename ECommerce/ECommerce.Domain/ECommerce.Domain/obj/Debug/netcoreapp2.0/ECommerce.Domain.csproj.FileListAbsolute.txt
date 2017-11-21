@@ -1,0 +1,11 @@
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/bin/Debug/netcoreapp2.0/ECommerce.Domain.deps.json
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/bin/Debug/netcoreapp2.0/ECommerce.Domain.dll
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/bin/Debug/netcoreapp2.0/ECommerce.Domain.pdb
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/bin/Debug/netcoreapp2.0/ECommerce.Helpers.dll
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/bin/Debug/netcoreapp2.0/ECommerce.Helpers.pdb
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/obj/Debug/netcoreapp2.0/ECommerce.Domain.csprojResolveAssemblyReference.cache
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/obj/Debug/netcoreapp2.0/ECommerce.Domain.csproj.CoreCompileInputs.cache
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/obj/Debug/netcoreapp2.0/ECommerce.Domain.AssemblyInfoInputs.cache
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/obj/Debug/netcoreapp2.0/ECommerce.Domain.AssemblyInfo.cs
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/obj/Debug/netcoreapp2.0/ECommerce.Domain.dll
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/obj/Debug/netcoreapp2.0/ECommerce.Domain.pdb
