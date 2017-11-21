@@ -1,12 +1,13 @@
-﻿<Properties StartupConfiguration="{381C5094-F327-4BC3-A86C-B48818961276}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.ItemProperties.ECommerce.App.ECommerce.App PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Api/Controllers/ValuesController.cs">
+﻿<Properties StartupConfiguration="{E64702E1-0346-4042-8F51-A3B5F9632398}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Application/Startup.cs">
     <Files>
-      <File FileName="ECommerce.Api/Controllers/ValuesController.cs" Line="10" Column="18" />
-      <File FileName="ECommerce.Api/Controllers/AccountController.cs" Line="13" Column="31" />
-      <File FileName="ECommerce.Api/Startup.cs" Line="25" Column="57" />
-      <File FileName="ECommerce.Infrastructure/Data/DataContext.cs" Line="9" Column="81" />
-      <File FileName="ECommerce.Api/Services/UserService.cs" Line="15" Column="56" />
+      <File FileName="ECommerce.Application/Controllers/AccountController.cs" Line="8" Column="1" />
+      <File FileName="ECommerce.Application/Controllers/ValuesController.cs" Line="6" Column="18" />
+      <File FileName="ECommerce.Application/Services/UserService.cs" Line="7" Column="25" />
+      <File FileName="ECommerce.Application/appsettings.json" Line="1" Column="1" />
+      <File FileName="ECommerce.Application/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="ECommerce.Application/Program.cs" Line="13" Column="25" />
+      <File FileName="ECommerce.Application/Startup.cs" Line="10" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -15,4 +16,8 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>ECommerce.Application/ECommerce.App.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.Ecommerce.Application.ECommerce.Application PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

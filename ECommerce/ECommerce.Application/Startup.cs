@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using ECommerce.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace ECommerce.Api
+namespace ECommerce.Application
 {
     public class Startup
     {

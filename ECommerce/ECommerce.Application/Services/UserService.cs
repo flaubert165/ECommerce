@@ -2,7 +2,7 @@
 using ECommerce.Domain.Contracts;
 using ECommerce.Domain.Entities;
 
-namespace ECommerce.Api.Services
+namespace ECommerce.Application.Services
 {
     public class UserService : IUserService
     {

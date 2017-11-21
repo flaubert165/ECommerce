@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ECommerce.Api.Controllers
+namespace ECommerce.Application.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
