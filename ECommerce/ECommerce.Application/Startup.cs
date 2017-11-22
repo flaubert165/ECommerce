@@ -12,6 +12,7 @@ using ECommerce.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
+using AutoMapper;
 
 namespace ECommerce.Application
 {
@@ -35,6 +36,8 @@ namespace ECommerce.Application
                     .AllowAnyHeader()
                     .AllowCredentials());
             });
+
+            services.AddAutoMapper();
 
             // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
