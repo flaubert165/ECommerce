@@ -19,39 +19,47 @@ namespace ECommerce.Application.Services
 
         public User Authenticate(string username, string password)
         {
-            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                throw new Exception();
+            }
+            else
             {
                 var user = _context.Users.SingleOrDefault(x => x.Username == username);
 
                 if (user == null)
-                {
                     throw new Exception();
-                }
 
                 if (!PasswordHelper.VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
-                {
                     throw new Exception();
-                }
+                
 
-                return user;
-
-            }
-            else
-            {
-                throw new ArgumentNullException();    
+                return user;    
             }
         }
 
+        //CREATE
         public User Create(User user, string password)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(password))
+                throw new Exception();
+
+            if (_context.Users.Any(x => x.Username == user.Username))
+                throw new Exception("Username " + user.Username + " já está em uso!");
+
+            byte[] passwordHash, passwordSalt;
+            PasswordHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
+
+            user.PasswordHash = passwordHash;
+            user.PasswordSalt = passwordSalt;
+
+            _context.Users.Add(user);
+            _context.SaveChanges();
+
+            return user;
         }
 
-        public void Delete(int id)
-        {
-            throw new System.NotImplementedException();
-        }
-
+        //READ
         public IEnumerable<User> GetAll()
         {
             return _context.Users;
@@ -59,12 +67,56 @@ namespace ECommerce.Application.Services
 
         public User GetById(int id)
         {
-            throw new System.NotImplementedException();
+            var user = _context.Users.Find(id);
+
+            if (user == null)
+                throw new Exception();
+
+            return user;
         }
 
-        public void Update(User user, string password = null)
+        //UPDATE
+        public void Update(User userParam, string password = null)
         {
-            throw new System.NotImplementedException();
+            var user = _context.Users.Find(userParam.Id);
+ 
+            if (user == null)
+                throw new Exception();
+ 
+            if (userParam.Username != user.Username)
+            {    
+                if (_context.Users.Any(x => x.Username == userParam.Username))
+                    throw new Exception("Username " + userParam.Username + " já está em uso!");
+            }
+
+            user.FirstName = userParam.FirstName;
+            user.LastName = userParam.LastName;
+            user.Username = userParam.Username;
+
+            if (!string.IsNullOrWhiteSpace(password))
+            {
+                byte[] passwordHash, passwordSalt;
+                PasswordHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
+ 
+                user.PasswordHash = passwordHash;
+                user.PasswordSalt = passwordSalt;
+            }
+ 
+            _context.Users.Update(user);
+            _context.SaveChanges();
+
+        }
+
+        //DELETE
+        public void Delete(int id)
+        {
+            var user = _context.Users.Find(id);
+
+            if (user != null)
+            {
+                _context.Users.Remove(user);
+                _context.SaveChanges();
+            }                   
         }
     }
 }
