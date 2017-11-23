@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{E64702E1-0346-4042-8F51-A3B5F9632398}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce Status">
     <Files>
-      <File FileName="ECommerce.Application/Controllers/ProductController.cs" Line="3" Column="1" />
-      <File FileName="ECommerce.Application/Controllers/OrderController.cs" Line="8" Column="26" />
-      <File FileName="ECommerce.Application/Controllers/UserController.cs" Line="31" Column="10" />
-      <File FileName="ECommerce.Application/Startup.cs" Line="6" Column="36" />
+      <File FileName="ECommerce.Application/Startup.cs" Line="34" Column="31" />
+      <File FileName="ECommerce.Application/Services/UserService.cs" Line="71" Column="48" />
+      <File FileName="ECommerce.Infrastructure/Persistence/DataContexts/MySQLDataContext.cs" Line="13" Column="9" />
       <File FileName="ECommerce Status" />
     </Files>
     <Pads>
@@ -14,7 +13,7 @@
             <Node name="ECommerce.Application" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
+              <Node name="appsettings.Development.json" selected="True" />
             </Node>
             <Node name="ECommerce.Domain" expanded="True">
               <Node name="Dtos" expanded="True" />

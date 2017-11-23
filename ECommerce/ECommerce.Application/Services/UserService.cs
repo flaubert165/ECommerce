@@ -10,9 +10,9 @@ namespace ECommerce.Application.Services
 {
     public class UserService : IUserService
     {
-        private DataContext _context;
+        private MySQLDataContext _context;
 
-        public UserService(DataContext context)
+        public UserService(MySQLDataContext context)
         {
             context.Database.EnsureCreated();
             _context = context;

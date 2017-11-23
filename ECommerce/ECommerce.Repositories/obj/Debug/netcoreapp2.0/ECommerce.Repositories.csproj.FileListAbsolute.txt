@@ -1,9 +1,9 @@
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/bin/Debug/netcoreapp2.0/ECommerce.Repositories.deps.json
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/bin/Debug/netcoreapp2.0/ECommerce.Repositories.dll
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/bin/Debug/netcoreapp2.0/ECommerce.Repositories.pdb
-/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/obj/Debug/netcoreapp2.0/ECommerce.Repositories.csprojResolveAssemblyReference.cache
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/obj/Debug/netcoreapp2.0/ECommerce.Repositories.csproj.CoreCompileInputs.cache
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/obj/Debug/netcoreapp2.0/ECommerce.Repositories.AssemblyInfoInputs.cache
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/obj/Debug/netcoreapp2.0/ECommerce.Repositories.AssemblyInfo.cs
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/obj/Debug/netcoreapp2.0/ECommerce.Repositories.dll
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/obj/Debug/netcoreapp2.0/ECommerce.Repositories.pdb
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/obj/Debug/netcoreapp2.0/ECommerce.Repositories.csprojResolveAssemblyReference.cache

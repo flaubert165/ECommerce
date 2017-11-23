@@ -28,7 +28,7 @@ namespace ECommerce.Application
         {
             services.AddCors();
             var connection = Configuration["DbConnection:MySqlConnectionString"];
-            services.AddDbContext<DataContext>(options =>
+            services.AddDbContext<MySQLDataContext>(options =>
                 options.UseMySql(connection)
             );
             services.AddMvc();

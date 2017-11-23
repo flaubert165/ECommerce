@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ECommerce.Infrastructure.Data
 {
-    public class DataContext : DbContext
+    public class MySQLDataContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options) : base(options) 
+        public MySQLDataContext(DbContextOptions<MySQLDataContext> options) 
+            : base(options) 
         {
+            
         }
 
         public DbSet<User> Users { get; set; }
