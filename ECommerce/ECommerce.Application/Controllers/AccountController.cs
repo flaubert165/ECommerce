@@ -4,7 +4,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using AutoMapper;
-using ECommerce.Domain.Contracts;
+using ECommerce.Domain.Services;
 using ECommerce.Domain.Dtos;
 using ECommerce.Domain.Entities;
 using ECommerce.Helpers;

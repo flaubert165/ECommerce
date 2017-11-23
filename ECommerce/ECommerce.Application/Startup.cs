@@ -2,11 +2,10 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.IO;
 using Microsoft.Extensions.Logging;
 using ECommerce.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using ECommerce.Domain.Contracts;
+using ECommerce.Domain.Services;
 using ECommerce.Application.Services;
 using ECommerce.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;

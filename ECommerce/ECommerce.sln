@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Domain", "ECommerce.Domain\ECommerce.Domain\ECommerce.Domain.csproj", "{F623CC42-6A0A-4A75-B044-3CD34CDF92C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Domain.Tests", "ECommerce.Domain\ECommerce.Domain\ECommerce.Domain.Tests\ECommerce.Domain.Tests.csproj", "{85756467-48A4-44F5-B06D-6FB2CB1BDC0C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Helpers", "ECommerce.Helpers\ECommerce.Helpers.csproj", "{890F13D8-67EB-4D60-B0E8-A36A9F885368}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Helpers.Tests", "ECommerce.Helpers\ECommerce.Helpers.Tests\ECommerce.Helpers.Tests.csproj", "{C662519C-B4C2-4365-8C54-BCAEAC08CD86}"
@@ -31,10 +29,6 @@ Global
 		{F623CC42-6A0A-4A75-B044-3CD34CDF92C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F623CC42-6A0A-4A75-B044-3CD34CDF92C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F623CC42-6A0A-4A75-B044-3CD34CDF92C5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{85756467-48A4-44F5-B06D-6FB2CB1BDC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85756467-48A4-44F5-B06D-6FB2CB1BDC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{85756467-48A4-44F5-B06D-6FB2CB1BDC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{85756467-48A4-44F5-B06D-6FB2CB1BDC0C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{890F13D8-67EB-4D60-B0E8-A36A9F885368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{890F13D8-67EB-4D60-B0E8-A36A9F885368}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{890F13D8-67EB-4D60-B0E8-A36A9F885368}.Release|Any CPU.ActiveCfg = Release|Any CPU

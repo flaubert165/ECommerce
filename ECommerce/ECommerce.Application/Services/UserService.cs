@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using ECommerce.Domain.Contracts;
+using ECommerce.Domain.Services;
 using ECommerce.Domain.Entities;
 using ECommerce.Helpers.Helpers;
 using ECommerce.Infrastructure.Data;

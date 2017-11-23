@@ -1,7 +1,7 @@
-﻿using ECommerce.Domain.Entities;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using ECommerce.Domain.Entities;
 
-namespace ECommerce.Domain.Contracts
+namespace ECommerce.Domain.Services
 {
     public interface IUserService
     {
