@@ -8,7 +8,8 @@
     <Folder Include="Entities\" />
     <Folder Include="ValueObjects\" />
     <Folder Include="Dtos\" />
-    <Folder Include="Contracts\" />
+    <Folder Include="Services\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ECommerce.Helpers\ECommerce.Helpers.csproj" />

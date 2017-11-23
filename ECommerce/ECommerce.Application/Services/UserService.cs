@@ -5,9 +5,13 @@ using ECommerce.Helpers.Helpers;
 using ECommerce.Infrastructure.Data;
 using System.Linq;
 using System;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.Application.Services
 {
+    [Authorize]
+    [Route("[controller]")]
     public class UserService : IUserService
     {
         private DataContext _context;
