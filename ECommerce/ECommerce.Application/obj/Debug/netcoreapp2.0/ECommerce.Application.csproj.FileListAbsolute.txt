@@ -2,5 +2,3 @@
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/obj/Debug/netcoreapp2.0/ECommerce.Application.csproj.CoreCompileInputs.cache
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/obj/Debug/netcoreapp2.0/ECommerce.Application.AssemblyInfoInputs.cache
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/obj/Debug/netcoreapp2.0/ECommerce.Application.AssemblyInfo.cs
-/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/obj/Debug/netcoreapp2.0/ECommerce.Application.dll
-/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/obj/Debug/netcoreapp2.0/ECommerce.Application.pdb

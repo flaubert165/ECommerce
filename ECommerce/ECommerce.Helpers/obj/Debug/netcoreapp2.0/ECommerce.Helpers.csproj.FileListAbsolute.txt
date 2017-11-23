@@ -6,4 +6,3 @@
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/obj/Debug/netcoreapp2.0/ECommerce.Helpers.AssemblyInfo.cs
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/obj/Debug/netcoreapp2.0/ECommerce.Helpers.dll
 /Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/obj/Debug/netcoreapp2.0/ECommerce.Helpers.pdb
-/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/obj/Debug/netcoreapp2.0/ECommerce.Helpers.csprojResolveAssemblyReference.cache
