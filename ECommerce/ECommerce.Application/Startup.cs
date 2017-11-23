@@ -24,7 +24,6 @@ namespace ECommerce.Application
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
@@ -60,13 +59,10 @@ namespace ECommerce.Application
                 };
             });
 
-
-            
-            //services.AddMvc();
             services.AddScoped<IUserService, UserService>();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseCors(x => x
@@ -77,7 +73,6 @@ namespace ECommerce.Application
 
             app.UseAuthentication();
             app.UseMvc();
-          
         }
     }
 }
