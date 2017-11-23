@@ -1,0 +1,8 @@
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/ECommerce.Application.Tests/bin/Debug/netcoreapp2.0/ECommerce.Application.Tests.deps.json
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/ECommerce.Application.Tests/bin/Debug/netcoreapp2.0/ECommerce.Application.Tests.dll
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/ECommerce.Application.Tests/bin/Debug/netcoreapp2.0/ECommerce.Application.Tests.pdb
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/ECommerce.Application.Tests/obj/Debug/netcoreapp2.0/ECommerce.Application.Tests.csproj.CoreCompileInputs.cache
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/ECommerce.Application.Tests/obj/Debug/netcoreapp2.0/ECommerce.Application.Tests.AssemblyInfoInputs.cache
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/ECommerce.Application.Tests/obj/Debug/netcoreapp2.0/ECommerce.Application.Tests.AssemblyInfo.cs
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/ECommerce.Application.Tests/obj/Debug/netcoreapp2.0/ECommerce.Application.Tests.dll
+/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/ECommerce.Application.Tests/obj/Debug/netcoreapp2.0/ECommerce.Application.Tests.pdb
