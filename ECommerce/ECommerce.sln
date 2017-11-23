@@ -1,8 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Domain", "ECommerce.Domain\ECommerce.Domain\ECommerce.Domain.csproj", "{F623CC42-6A0A-4A75-B044-3CD34CDF92C5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Helpers", "ECommerce.Helpers\ECommerce.Helpers.csproj", "{890F13D8-67EB-4D60-B0E8-A36A9F885368}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Helpers.Tests", "ECommerce.Helpers\ECommerce.Helpers.Tests\ECommerce.Helpers.Tests.csproj", "{C662519C-B4C2-4365-8C54-BCAEAC08CD86}"
@@ -19,16 +17,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Application", "EC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Application.Tests", "ECommerce.Application\ECommerce.Application.Tests\ECommerce.Application.Tests.csproj", "{F4FD471D-4AEA-4627-B326-FFD5BC2EA694}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Domain", "ECommerce.Domain\ECommerce.Domain.csproj", "{6C705394-D37B-48B6-B4E8-884C138A5AFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F623CC42-6A0A-4A75-B044-3CD34CDF92C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F623CC42-6A0A-4A75-B044-3CD34CDF92C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F623CC42-6A0A-4A75-B044-3CD34CDF92C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F623CC42-6A0A-4A75-B044-3CD34CDF92C5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{890F13D8-67EB-4D60-B0E8-A36A9F885368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{890F13D8-67EB-4D60-B0E8-A36A9F885368}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{890F13D8-67EB-4D60-B0E8-A36A9F885368}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,6 +57,10 @@ Global
 		{F4FD471D-4AEA-4627-B326-FFD5BC2EA694}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4FD471D-4AEA-4627-B326-FFD5BC2EA694}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4FD471D-4AEA-4627-B326-FFD5BC2EA694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C705394-D37B-48B6-B4E8-884C138A5AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C705394-D37B-48B6-B4E8-884C138A5AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C705394-D37B-48B6-B4E8-884C138A5AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C705394-D37B-48B6-B4E8-884C138A5AFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection

@@ -6550,8 +6550,8 @@
     },
     "ECommerce.Domain/1.0.0": {
       "type": "project",
-      "path": "../ECommerce.Domain/ECommerce.Domain/ECommerce.Domain.csproj",
-      "msbuildProject": "../ECommerce.Domain/ECommerce.Domain/ECommerce.Domain.csproj"
+      "path": "../ECommerce.Domain/ECommerce.Domain.csproj",
+      "msbuildProject": "../ECommerce.Domain/ECommerce.Domain.csproj"
     },
     "ECommerce.Helpers/1.0.0": {
       "type": "project",
@@ -6593,11 +6593,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/ECommerce.Domain.csproj": {
-              "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain/ECommerce.Domain.csproj"
-            },
             "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj": {
               "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj"
+            },
+            "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain.csproj": {
+              "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain.csproj"
             }
           }
         }

@@ -1,11 +1,18 @@
 ﻿<Properties StartupConfiguration="{E64702E1-0346-4042-8F51-A3B5F9632398}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce Status">
     <Files>
-      <File FileName="ECommerce.Application/Controllers/AccountController.cs" Line="7" Column="32" />
-      <File FileName="ECommerce.Application/Services/UserService.cs" Line="2" Column="32" />
-      <File FileName="ECommerce.Application/Startup.cs" Line="10" Column="25" />
       <File FileName="ECommerce Status" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ECommerce" expanded="True">
+            <Node name="ECommerce.Application" expanded="True" />
+            <Node name="ECommerce.Domain" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

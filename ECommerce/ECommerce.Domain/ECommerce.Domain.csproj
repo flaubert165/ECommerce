@@ -12,6 +12,6 @@
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ECommerce.Helpers\ECommerce.Helpers.csproj" />
+    <ProjectReference Include="..\ECommerce.Helpers\ECommerce.Helpers.csproj" />
   </ItemGroup>
 </Project>
