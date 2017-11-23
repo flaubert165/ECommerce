@@ -14,6 +14,7 @@ namespace ECommerce.Application.Services
 
         public UserService(DataContext context)
         {
+            context.Database.EnsureCreated();
             _context = context;
         }
 

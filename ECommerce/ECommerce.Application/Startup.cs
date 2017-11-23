@@ -28,15 +28,20 @@ namespace ECommerce.Application
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(options =>
+            /*services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
                     builder => builder.AllowAnyOrigin()
                     .AllowAnyMethod()
                     .AllowAnyHeader()
                     .AllowCredentials());
-            });
-
+            });*/
+            services.AddCors();
+            var connection = Configuration["DbConnection:MySqlConnectionString"];
+            services.AddDbContext<DataContext>(options =>
+                options.UseMySql(connection)
+            );
+            services.AddMvc();
             services.AddAutoMapper();
 
             // configure strongly typed settings objects
@@ -64,21 +69,18 @@ namespace ECommerce.Application
                 };
             });
 
-            var connection = Configuration["DbConnection:MySqlConnectionString"];
-            services.AddDbContext<DataContext>(options =>
-                options.UseMySql(connection)
-            );
+
             
-            services.AddMvc();
+            //services.AddMvc();
             services.AddScoped<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseCors("CorsPolicy");
+            //app.UseCors("CorsPolicy");
 
-            app.Use(async (context, next) => {
+            /*app.Use(async (context, next) => {
                 await next();
                 if (context.Response.StatusCode == 404 &&
                    !Path.HasExtension(context.Request.Path.Value) &&
@@ -87,11 +89,18 @@ namespace ECommerce.Application
                     context.Request.Path = "/index.html";
                     await next();
                 }
-            });
+            });*/
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
 
-            app.UseMvcWithDefaultRoute();
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
+            app.UseAuthentication();
+            app.UseMvc();
+            //app.UseMvcWithDefaultRoute();
+            //app.UseDefaultFiles();
+            //app.UseStaticFiles();
         }
     }
 }

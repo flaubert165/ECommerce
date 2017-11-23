@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using ECommerce.Domain.Dtos;
+using ECommerce.Domain.Entities;
 
 namespace ECommerce.Helpers
 {
