@@ -13,17 +13,21 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
+
 namespace ECommerce.Application.Controllers
 {
     [Authorize]
     [Route("[controller]")]
-    public class UserController : Controller
+    public class AccountController : Controller
     {
         private IUserService _userService;
         private IMapper _mapper;
         private readonly AppSettings _appSettings;
 
-        public UserController(IUserService userService, IMapper mapper, IOptions<AppSettings> appSettings)
+        public AccountController(
+            IUserService userService,
+            IMapper mapper,
+            IOptions<AppSettings> appSettings)
         {
             _userService = userService;
             _mapper = mapper;
@@ -66,7 +70,7 @@ namespace ECommerce.Application.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                Console.WriteLine(ex.ToString());
             }
 
             return Unauthorized();
@@ -77,20 +81,22 @@ namespace ECommerce.Application.Controllers
         [HttpPost("register")]
         public IActionResult Register([FromBody]UserDto userDto)
         {
-
+            // map dto to entity
             var user = _mapper.Map<User>(userDto);
 
             try
             {
+                // save 
                 _userService.Create(user, userDto.Password);
                 return Ok();
             }
             catch (Exception ex)
             {
+                // return error message if there was an exception
                 return BadRequest(ex.Message);
             }
         }
-        
+
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -110,16 +116,19 @@ namespace ECommerce.Application.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody]UserDto userDto)
         {
+            // map dto to entity and set id
             var user = _mapper.Map<User>(userDto);
             user.Id = id;
 
             try
             {
+                // save 
                 _userService.Update(user, userDto.Password);
                 return Ok();
             }
             catch (Exception ex)
             {
+                // return error message if there was an exception
                 return BadRequest(ex.Message);
             }
         }

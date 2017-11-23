@@ -1,8 +1,32 @@
 ﻿<Properties StartupConfiguration="{E64702E1-0346-4042-8F51-A3B5F9632398}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Application/appsettings.json">
+    <Files>
+      <File FileName="ECommerce.Application/Controllers/AccountController.cs" Line="45" Column="13" />
+      <File FileName="ECommerce.Application/Startup.cs" Line="49" Column="26" />
+      <File FileName="ECommerce.Application/Services/UserService.cs" Line="38" Column="1" />
+      <File FileName="ECommerce.Infrastructure/Data/DataContext.cs" Line="8" Column="25" />
+      <File FileName="ECommerce.Helpers/Helpers/PasswordHelper.cs" Line="38" Column="1" />
+      <File FileName="ECommerce.Application/appsettings.json" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+>>>>>>> parent of 86efd4e... Finalização do Processo de Autenticação e Inicio
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/AccountController.cs" relfile="ECommerce.Application/Controllers/AccountController.cs" line="67" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/AccountController.cs" relfile="ECommerce.Application/Controllers/AccountController.cs" line="60" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/AccountController.cs" relfile="ECommerce.Application/Controllers/AccountController.cs" line="75" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/AccountController.cs" relfile="ECommerce.Application/Controllers/AccountController.cs" line="93" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/AccountController.cs" relfile="ECommerce.Application/Controllers/AccountController.cs" line="80" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/AccountController.cs" relfile="ECommerce.Application/Controllers/AccountController.cs" line="81" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/AccountController.cs" relfile="ECommerce.Application/Controllers/AccountController.cs" line="86" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/AccountController.cs" relfile="ECommerce.Application/Controllers/AccountController.cs" line="58" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/AccountController.cs" relfile="ECommerce.Application/Controllers/AccountController.cs" line="57" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/AccountController.cs" relfile="ECommerce.Application/Controllers/AccountController.cs" line="48" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

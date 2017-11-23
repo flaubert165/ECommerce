@@ -3,6 +3,9 @@ namespace ECommerce.Helpers.Helpers
 {
     public class PasswordHelper
     {
+        public PasswordHelper()
+        {
+        }
 
         public static void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
