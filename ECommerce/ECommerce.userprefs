@@ -7,7 +7,6 @@
       <File FileName="ECommerce.Domain/Entities/Category.cs" Line="12" Column="32" />
       <File FileName="ECommerce.Domain/Services/IProductService.cs" Line="13" Column="33" />
       <File FileName="ECommerce.Domain/Services/IUserService.cs" Line="8" Column="9" />
-      <File FileName="ECommerce.Domain/Repositories/IUserRepository.cs" Line="13" Column="21" />
       <File FileName="ECommerce Status" />
     </Files>
     <Pads>

@@ -8,6 +8,7 @@
     <Folder Include="Persistence\" />
     <Folder Include="Persistence\Map\" />
     <Folder Include="Persistence\DataContexts\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.0.0" />
