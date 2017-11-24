@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace ECommerce.Domain.Entities
 {
-    public class Order
+    public class Order : Entity
     {
         private IList<OrderItem> _orderItems;
         public EOrderStatus Status { get; set; }
@@ -19,7 +19,6 @@ namespace ECommerce.Domain.Entities
             this.Status = EOrderStatus.Created;
         }
 
-        public int Id { get; private set; }
         public DateTime Date { get; private set; }
         public ICollection<OrderItem> OrderItems
         {

@@ -1,6 +1,6 @@
 ﻿namespace ECommerce.Domain.Entities
 {
-    public class Category
+    public class Category : Entity
     {
         protected Category() { }
 
@@ -9,7 +9,6 @@
             this.Title = title;
         }
 
-        public int Id { get; private set; }
         public string Title { get; private set; }
 
     }

@@ -5,6 +5,7 @@ namespace ECommerce.Infrastructure.Data
 {
     public class MySQLDataContext : DbContext
     {
+        
         public MySQLDataContext(DbContextOptions<MySQLDataContext> options) 
             : base(options) 
         {
