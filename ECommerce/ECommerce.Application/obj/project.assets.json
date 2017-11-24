@@ -4931,16 +4931,6 @@
         "runtime": {
           "bin/placeholder/ECommerce.Infrastructure.dll": {}
         }
-      },
-      "ECommerce.Repositories/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/ECommerce.Repositories.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ECommerce.Repositories.dll": {}
-        }
       }
     },
     ".NETCoreApp,Version=v2.0/win": {
@@ -9912,16 +9902,6 @@
         },
         "runtime": {
           "bin/placeholder/ECommerce.Infrastructure.dll": {}
-        }
-      },
-      "ECommerce.Repositories/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/ECommerce.Repositories.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ECommerce.Repositories.dll": {}
         }
       }
     },
@@ -15149,16 +15129,6 @@
         "runtime": {
           "bin/placeholder/ECommerce.Infrastructure.dll": {}
         }
-      },
-      "ECommerce.Repositories/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/ECommerce.Repositories.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ECommerce.Repositories.dll": {}
-        }
       }
     },
     ".NETCoreApp,Version=v2.0/win-x86": {
@@ -20384,16 +20354,6 @@
         },
         "runtime": {
           "bin/placeholder/ECommerce.Infrastructure.dll": {}
-        }
-      },
-      "ECommerce.Repositories/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/ECommerce.Repositories.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ECommerce.Repositories.dll": {}
         }
       }
     }
@@ -29443,11 +29403,6 @@
       "type": "project",
       "path": "../ECommerce.Infrastructure/ECommerce.Infrastructure.csproj",
       "msbuildProject": "../ECommerce.Infrastructure/ECommerce.Infrastructure.csproj"
-    },
-    "ECommerce.Repositories/1.0.0": {
-      "type": "project",
-      "path": "../ECommerce.Repositories/ECommerce.Repositories.csproj",
-      "msbuildProject": "../ECommerce.Repositories/ECommerce.Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -29455,7 +29410,6 @@
       "ECommerce.Domain >= 1.0.0",
       "ECommerce.Helpers >= 1.0.0",
       "ECommerce.Infrastructure >= 1.0.0",
-      "ECommerce.Repositories >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.AspNetCore.Mvc >= 2.0.1",
       "Microsoft.AspNetCore.StaticFiles >= 2.0.1",
@@ -29493,9 +29447,6 @@
             },
             "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj": {
               "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj"
-            },
-            "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/ECommerce.Repositories.csproj": {
-              "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Repositories/ECommerce.Repositories.csproj"
             },
             "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain.csproj": {
               "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain.csproj"

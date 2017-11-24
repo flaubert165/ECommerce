@@ -1,21 +1,24 @@
 ﻿using System.Collections.Generic;
 using ECommerce.Domain.Services;
 using ECommerce.Domain.Entities;
+using ECommerce.Domain.Repositories;
 using ECommerce.Helpers.Helpers;
-using ECommerce.Infrastructure.Data;
-using System.Linq;
 using System;
+using System.Security.Claims;
+using System.Text;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
 
 namespace ECommerce.Application.Services
 {
     public class UserService : IUserService
     {
-        private MySQLDataContext _context;
+        
+        private IUserRepository _repository;
 
-        public UserService(MySQLDataContext context)
+        public UserService(IUserRepository repository)
         {
-            context.Database.EnsureCreated();
-            _context = context;
+            _repository = repository;
         }
 
         public User Authenticate(string username, string password)
@@ -26,7 +29,7 @@ namespace ECommerce.Application.Services
             }
             else
             {
-                var user = _context.Users.SingleOrDefault(x => x.Username == username);
+                var user = _repository.GetByUserName(username);
 
                 if (user == null)
                     throw new Exception();
@@ -39,13 +42,31 @@ namespace ECommerce.Application.Services
             }
         }
 
+        public String GenerateSessionToken(User user, string secret)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(secret);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, user.Id.ToString())
+                }),
+                Expires = DateTime.UtcNow.AddMinutes(30),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+
+            return tokenHandler.WriteToken(token);
+        }
+
         //CREATE
         public User Create(User user, string password)
         {
             if (string.IsNullOrEmpty(password))
                 throw new Exception();
 
-            if (_context.Users.Any(x => x.Username == user.Username))
+            if (_repository.GetByUserName(user.Username) != null)
                 throw new Exception("Username " + user.Username + " já está em uso!");
 
             byte[] passwordHash, passwordSalt;
@@ -54,8 +75,7 @@ namespace ECommerce.Application.Services
             user.PasswordHash = passwordHash;
             user.PasswordSalt = passwordSalt;
 
-            _context.Users.Add(user);
-            _context.SaveChanges();
+            _repository.Create(user);
 
             return user;
         }
@@ -63,12 +83,12 @@ namespace ECommerce.Application.Services
         //READ
         public IEnumerable<User> GetAll()
         {
-            return _context.Users;
+            return _repository.GetAll();
         }
 
         public User GetById(int id)
         {
-            var user = _context.Users.Find(id);
+            var user = _repository.GetById(id);
 
             if (user == null)
                 throw new Exception();
@@ -79,14 +99,14 @@ namespace ECommerce.Application.Services
         //UPDATE
         public void Update(User userParam, string password = null)
         {
-            var user = _context.Users.Find(userParam.Id);
+            var user = _repository.GetById(userParam.Id);
  
             if (user == null)
                 throw new Exception();
  
             if (userParam.Username != user.Username)
             {    
-                if (_context.Users.Any(x => x.Username == userParam.Username))
+                if (_repository.GetByUserName(userParam.Username) != null)
                     throw new Exception("Username " + userParam.Username + " já está em uso!");
             }
 
@@ -102,22 +122,18 @@ namespace ECommerce.Application.Services
                 user.PasswordHash = passwordHash;
                 user.PasswordSalt = passwordSalt;
             }
- 
-            _context.Users.Update(user);
-            _context.SaveChanges();
 
+            _repository.Update(user);
         }
 
         //DELETE
         public void Delete(int id)
         {
-            var user = _context.Users.Find(id);
+            if (false)
+                throw new Exception();
 
-            if (user != null)
-            {
-                _context.Users.Remove(user);
-                _context.SaveChanges();
-            }                   
+            _repository.Delete(id);
         }
+
     }
 }

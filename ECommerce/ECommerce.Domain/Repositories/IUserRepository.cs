@@ -5,11 +5,11 @@ namespace ECommerce.Domain.Repositories
 {
     public interface IUserRepository
     {
-        User Authenticate(string username, string password);
         IEnumerable<User> GetAll();
         User GetById(int id);
-        User Create(User user, string password);
-        void Update(User user, string password = null);
+        User GetByUserName(string username);
+        User Create(User user);
+        void Update(User user);
         void Delete(int id);
     }
 }
