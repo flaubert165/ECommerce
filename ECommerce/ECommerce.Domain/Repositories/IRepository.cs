@@ -5,13 +5,13 @@ using System.Linq.Expressions;
 
 namespace ECommerce.Domain.Repositories
 {
-    public interface IRepository<T>
+    public interface IRepository<TEntity>
     {
-        IQueryable<T> Query(Expression<Func<T, bool>> filter);
-        IEnumerable<T> GetAll();
-        T GetById(int id);
-        T Create(T entity);
-        void Update(T entity);
+        IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> filter);
+        IEnumerable<TEntity> GetAll();
+        TEntity GetById(int id);
+        TEntity Create(TEntity entity);
+        void Update(TEntity entity);
         void Delete(int id);
     }
 }
