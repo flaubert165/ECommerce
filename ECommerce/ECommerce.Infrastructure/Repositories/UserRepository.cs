@@ -7,7 +7,7 @@ using ECommerce.Infrastructure.Data;
 
 namespace ECommerce.Infrastructure.Repositories
 {
-    public class UserRepository : IUserRepository, IDisposable
+    public class UserRepository : IUserRepository
     {
         private MySQLDataContext _context;
 
@@ -62,15 +62,6 @@ namespace ECommerce.Infrastructure.Repositories
                 _context.Users.Remove(user);
                 _context.SaveChanges();
             }
-        }
-
-        public void Dispose()
-        {
-            if (_context != null)
-            {
-                _context.Dispose();
-            }
-            GC.SuppressFinalize(this);
         }
 
     }

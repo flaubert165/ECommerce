@@ -1,28 +1,29 @@
 ﻿<Properties StartupConfiguration="{E64702E1-0346-4042-8F51-A3B5F9632398}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Infrastructure/Repositories/UserRepository.cs">
     <Files>
-      <File FileName="ECommerce.Application/Services/UserService.cs" Line="98" Column="9" />
-      <File FileName="ECommerce.Infrastructure/Repositories/UserRepository.cs" Line="10" Column="43" />
-      <File FileName="ECommerce.Domain/Repositories/IRepository.cs" Line="12" Column="27" />
-      <File FileName="ECommerce.Domain/Services/IUserService.cs" Line="10" Column="10" />
-      <File FileName="ECommerce.Domain/Repositories/IUserRepository.cs" Line="12" Column="28" />
+      <File FileName="ECommerce.Application/Services/UserService.cs" Line="48" Column="45" />
+      <File FileName="ECommerce.Infrastructure/Repositories/UserRepository.cs" Line="1" Column="1" />
       <File FileName="ECommerce Status" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ECommerce" expanded="True">
-            <Node name="ECommerce.Application" expanded="True" selected="True">
+            <Node name="ECommerce.Application" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
+            <Node name="ECommerce.Application.Tests" expanded="True" />
             <Node name="ECommerce.Domain" expanded="True">
               <Node name="Entities" expanded="True" />
+              <Node name="Enums" expanded="True" />
               <Node name="Repositories" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
             <Node name="ECommerce.Infrastructure" expanded="True">
-              <Node name="Repositories" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="UserRepository.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
