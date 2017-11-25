@@ -10,6 +10,6 @@ namespace ECommerce.Domain.Repositories
         User GetByUserName(string username);
         User Create(User user);
         void Update(User user);
-        void Delete(int id);
+        void Delete(User id);
     }
 }

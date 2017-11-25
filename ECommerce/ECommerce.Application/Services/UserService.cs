@@ -128,10 +128,12 @@ namespace ECommerce.Application.Services
         //DELETE
         public void Delete(int id)
         {
-            if (false)
+            var user = _repository.GetById(id);
+
+            if (user == null)
                 throw new Exception();
 
-            _repository.Delete(id);
+            _repository.Delete(user);
         }
 
     }
