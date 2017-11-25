@@ -30,13 +30,13 @@ namespace ECommerce.Application.Controllers
         [HttpPost("authenticate")]
         public IActionResult Authenticate([FromBody]UserDto userDto)
         {
+            var user = _userService.Authenticate(userDto.Username, userDto.Password);
+
+            if (user == null)
+               return Unauthorized();
+            
             try
             {
-                var user = _userService.Authenticate(userDto.Username, userDto.Password);
-
-                if (user == null)
-                    return Unauthorized();
-
                 var tokenString = _userService.GenerateSessionToken(user, _appSettings.Secret);
 
                 return Ok(new
@@ -50,11 +50,9 @@ namespace ECommerce.Application.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                return BadRequest(ex.Message);
             }
-
-            return Unauthorized();
-
+           
         }
 
         [AllowAnonymous]
