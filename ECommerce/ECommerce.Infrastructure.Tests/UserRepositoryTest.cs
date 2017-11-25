@@ -21,6 +21,7 @@ namespace ECommerce.Infrastructure.Tests
         {
             var list = _repository.GetAll();
             Assert.AreNotEqual(0, list.Count);
+            Assert.IsNotNull(list);
         }
 
     }
