@@ -20,7 +20,6 @@ namespace ECommerce.Infrastructure.Repositories
 
         public T Create(T entity)
         {
-            entity.Id = 1;
             _list.Add(entity);
 
             return entity;
@@ -38,7 +37,7 @@ namespace ECommerce.Infrastructure.Repositories
 
         public T GetById(int id)
         {
-            throw new NotImplementedException();
+            return _list.Find(x => x.Id == id);
         }
 
         public IQueryable<T> Query(Expression<Func<T, bool>> filter)

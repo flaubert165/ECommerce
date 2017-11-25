@@ -13,7 +13,13 @@ namespace ECommerce.Infrastructure.Tests
         public UserRepositoryTest()
         {
             _repository = new RepositoryList<User>(UserTestData.GetAll());
+        }
 
+        [TestMethod]
+        public void GetById()
+        {
+            var user = _repository.GetById(1);
+            Assert.AreEqual(user.Id, 1);
         }
 
         [TestMethod]
