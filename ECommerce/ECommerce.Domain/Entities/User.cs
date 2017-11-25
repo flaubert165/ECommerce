@@ -11,5 +11,12 @@
         public User()
         {
         }
+
+        public User(string fName, string lName, string uName)
+        {
+            this.FirstName = fName;
+            this.LastName = lName;
+            this.Username = uName;
+        }
     }
 }

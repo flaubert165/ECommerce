@@ -8,7 +8,7 @@ namespace ECommerce.Domain.Repositories
     public interface IRepository<T>
     {
         IQueryable<T> Query(Expression<Func<T, bool>> filter);
-        IEnumerable<T> GetAll();
+        List<T> GetAll();
         T GetById(int id);
         T Create(T entity);
         void Update(T entity);
