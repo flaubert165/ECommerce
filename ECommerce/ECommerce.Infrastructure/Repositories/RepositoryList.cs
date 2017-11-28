@@ -14,20 +14,19 @@ namespace ECommerce.Infrastructure.Repositories
 
         public RepositoryList(List<T> list)
         {
-            this._list = list;
+            _list = list;
             commited = false;
         }
 
         public T Create(T entity)
         {
             _list.Add(entity);
-
             return entity;
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            _list.Remove(GetById(id));
         }
 
         public List<T> GetAll()
@@ -42,12 +41,12 @@ namespace ECommerce.Infrastructure.Repositories
 
         public IQueryable<T> Query(Expression<Func<T, bool>> filter)
         {
-            throw new NotImplementedException();
+            return _list.AsQueryable();
         }
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            _list[_list.IndexOf(GetById(entity.Id))] = entity;
         }
     }
 }

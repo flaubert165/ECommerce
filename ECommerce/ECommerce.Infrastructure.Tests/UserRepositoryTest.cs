@@ -16,6 +16,19 @@ namespace ECommerce.Infrastructure.Tests
         }
 
         [TestMethod]
+        public void Create()
+        {
+            var user = new User { Id = 5, Username = "ble", FirstName = "blebleble", LastName = "blebleble" };
+
+            var totalBeforeInsert = _repository.GetAll().Count;
+            var user1 = _repository.Create(user);
+            var totalAfterInsert = _repository.GetAll().Count;
+
+            Assert.IsNotNull(user1);
+            Assert.AreNotEqual(totalBeforeInsert, totalAfterInsert);
+        }
+
+        [TestMethod]
         public void GetById()
         {
             var user = _repository.GetById(1);
