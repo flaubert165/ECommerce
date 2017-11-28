@@ -54,5 +54,12 @@ namespace ECommerce.Infrastructure.Tests
             Assert.AreEqual(user.Username, _repository.GetById(user.Id).Username);
         }
 
+        [TestMethod]
+        public void Delete()
+        {
+            _repository.Delete(1);
+            Assert.IsNull(_repository.GetById(1));
+        }
+
     }
 }
