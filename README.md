@@ -1,2 +1,2 @@
 # ECommerce
-RestAPIs of the ECommerce project.
+ECommerce Project RestAPIs.
