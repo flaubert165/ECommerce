@@ -21,10 +21,10 @@ namespace ECommerce.Infrastructure.Tests
             var user = new User { Id = 5, Username = "ble", FirstName = "blebleble", LastName = "blebleble" };
 
             var totalBeforeInsert = _repository.GetAll().Count;
-            var user1 = _repository.Create(user);
+            var userSuccecedAdded = _repository.Create(user);
             var totalAfterInsert = _repository.GetAll().Count;
 
-            Assert.IsNotNull(user1);
+            Assert.IsNotNull(userSuccecedAdded);
             Assert.AreNotEqual(totalBeforeInsert, totalAfterInsert);
         }
 
