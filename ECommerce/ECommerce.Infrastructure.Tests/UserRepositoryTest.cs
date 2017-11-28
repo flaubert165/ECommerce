@@ -43,5 +43,16 @@ namespace ECommerce.Infrastructure.Tests
             Assert.IsNotNull(list);
         }
 
+        [TestMethod]
+        public void Update()
+        {
+            var user = new User { Id = 4, Username = "ble", FirstName = "blebleble", LastName = "blebleble" };
+            var totalBeforeInsert = _repository.GetAll().Count;
+            _repository.Update(user);
+            var totalAfterInsert = _repository.GetAll().Count;
+            Assert.AreEqual(totalBeforeInsert, totalAfterInsert);
+            Assert.AreEqual(user.Username, _repository.GetById(user.Id).Username);
+        }
+
     }
 }
