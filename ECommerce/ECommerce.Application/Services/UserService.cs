@@ -3,6 +3,7 @@ using ECommerce.Domain.Services;
 using ECommerce.Domain.Entities;
 using ECommerce.Domain.Repositories;
 using ECommerce.Helpers.Validaton;
+using ECommerce.Helpers.Resources;
 using System;
 using System.Security.Claims;
 using System.Text;
@@ -24,7 +25,7 @@ namespace ECommerce.Application.Services
         {
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                throw new Exception();
+                throw new Exception(Errors.UserNotFound);
             }
             else
             {
@@ -34,9 +35,8 @@ namespace ECommerce.Application.Services
                     throw new Exception();
 
                 if (!PasswordHelper.VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
-                    throw new Exception();
+                    throw new Exception(Errors.PasswordDoesNotMatch);
                 
-
                 return user;    
             }
         }
@@ -63,10 +63,10 @@ namespace ECommerce.Application.Services
         public User Create(User user, string password)
         {
             if (string.IsNullOrEmpty(password))
-                throw new Exception();
+                throw new Exception(Errors.NullUserPassword);
 
             if (_repository.GetByUserName(user.Username) != null)
-                throw new Exception("Username " + user.Username + " já está em uso!");
+                throw new Exception(Errors.DuplicateUsername);
 
             byte[] passwordHash, passwordSalt;
             PasswordHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
@@ -90,7 +90,7 @@ namespace ECommerce.Application.Services
             var user = _repository.GetById(id);
 
             if (user == null)
-                throw new Exception();
+                throw new Exception(Errors.UserNotFound);
 
             return user;
         }
@@ -101,12 +101,12 @@ namespace ECommerce.Application.Services
             var user = _repository.GetById(userParam.Id);
  
             if (user == null)
-                throw new Exception();
+                throw new Exception(Errors.UserNotFound);
  
             if (userParam.Username != user.Username)
             {    
                 if (_repository.GetByUserName(userParam.Username) != null)
-                    throw new Exception("Username " + userParam.Username + " já está em uso!");
+                    throw new Exception(Errors.DuplicateUsername);
             }
 
             user.FirstName = userParam.FirstName;
@@ -131,7 +131,7 @@ namespace ECommerce.Application.Services
             var user = _repository.GetById(id);
 
             if (user == null)
-                throw new Exception();
+                throw new Exception(Errors.UserNotFound);
 
             _repository.Delete(user);
         }

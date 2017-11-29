@@ -2,8 +2,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce Status">
     <Files>
       <File FileName="ECommerce.Domain/Entities/User.cs" Line="4" Column="6" />
-      <File FileName="ECommerce.Application/Services/UserService.cs" Line="5" Column="35" />
+      <File FileName="ECommerce.Application/Services/UserService.cs" Line="134" Column="56" />
       <File FileName="ECommerce.Helpers/Validation/PasswordHelper.cs" Line="2" Column="38" />
+      <File FileName="ECommerce.Helpers/Resources/Errors.resx" Line="33" Column="31" />
+      <File FileName="ECommerce.Helpers/Resources/Errors.Designer.cs" Line="60" Column="10" />
       <File FileName="ECommerce Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
