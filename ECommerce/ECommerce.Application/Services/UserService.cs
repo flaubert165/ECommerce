@@ -41,7 +41,7 @@ namespace ECommerce.Application.Services
             }
         }
 
-        public String GenerateSessionToken(User user, string secret)
+        public string GenerateSessionToken(User user, string secret)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(secret);
