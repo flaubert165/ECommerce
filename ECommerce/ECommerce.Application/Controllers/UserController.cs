@@ -8,7 +8,7 @@ using ECommerce.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using ECommerce.Helpers.Validaton;
+using ECommerce.Helpers.Validation;
 
 namespace ECommerce.Application.Controllers
 {
