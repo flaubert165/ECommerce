@@ -5,10 +5,6 @@ using ECommerce.Domain.Repositories;
 using ECommerce.Helpers.Validaton;
 using ECommerce.Helpers.Resources;
 using System;
-using System.Security.Claims;
-using System.Text;
-using System.IdentityModel.Tokens.Jwt;
-using Microsoft.IdentityModel.Tokens;
 
 namespace ECommerce.Application.Services
 {

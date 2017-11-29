@@ -3,10 +3,9 @@ using System.Security.Claims;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
-using ECommerce.Helpers.Validation;
 using ECommerce.Helpers.Resources;
 
-namespace ECommerce.Helpers.Validaton
+namespace ECommerce.Helpers.Validation
 {
     public class SecurityHelper
     {

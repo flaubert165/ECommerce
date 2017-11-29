@@ -28,7 +28,7 @@ namespace ECommerce.Application.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost("authenticate")]
+        [HttpPost("user/authenticate")]
         public IActionResult Authenticate([FromBody]UserDto userDto)
         {
             var user = _userService.Authenticate(userDto.Username, userDto.Password);
@@ -57,7 +57,7 @@ namespace ECommerce.Application.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost("register")]
+        [HttpPost("user/register")]
         public IActionResult Register([FromBody]UserDto userDto)
         {
 

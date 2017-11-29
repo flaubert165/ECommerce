@@ -1,6 +1,4 @@
-﻿using ECommerce.Helpers.Resources;
-using ECommerce.Helpers.Validation;
-using ECommerce.Helpers.Validaton;
+﻿using ECommerce.Helpers.Validation;
 
 namespace ECommerce.Domain.Entities
 {

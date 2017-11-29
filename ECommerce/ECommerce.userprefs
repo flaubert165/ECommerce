@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{E64702E1-0346-4042-8F51-A3B5F9632398}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce Status">
     <Files>
-      <File FileName="ECommerce.Application/Controllers/UserController.cs" Line="39" Column="16" />
-      <File FileName="ECommerce.Application/Services/UserService.cs" Line="97" Column="47" />
-      <File FileName="ECommerce.Domain/Entities/User.cs" Line="49" Column="35" />
+      <File FileName="ECommerce.Application/Controllers/UserController.cs" Line="23" Column="46" />
+      <File FileName="ECommerce.Application/Services/UserService.cs" Line="24" Column="13" />
+      <File FileName="ECommerce.Domain/Entities/User.cs" Line="11" Column="21" />
       <File FileName="ECommerce.Helpers/Validation/Guard.cs" Line="21" Column="42" />
-      <File FileName="ECommerce.Helpers/Validation/SecurityHelper.cs" Line="49" Column="10" />
+      <File FileName="ECommerce.Helpers/Validation/SecurityHelper.cs" Line="5" Column="38" />
       <File FileName="ECommerce.Helpers.Tests/GuardTests.cs" Line="7" Column="16" />
+      <File FileName="ECommerce.Application/Startup.cs" Line="33" Column="15" />
       <File FileName="ECommerce Status" />
     </Files>
     <Pads>
@@ -40,7 +41,14 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/UserController.cs" relfile="ECommerce.Application/Controllers/UserController.cs" line="43" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/UserController.cs" relfile="ECommerce.Application/Controllers/UserController.cs" line="41" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/UserController.cs" relfile="ECommerce.Application/Controllers/UserController.cs" line="36" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/UserController.cs" relfile="ECommerce.Application/Controllers/UserController.cs" line="34" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/UserController.cs" relfile="ECommerce.Application/Controllers/UserController.cs" line="25" column="1" />
+      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Services/UserService.cs" relfile="ECommerce.Application/Services/UserService.cs" line="22" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
