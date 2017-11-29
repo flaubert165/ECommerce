@@ -29445,11 +29445,11 @@
             "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj": {
               "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Infrastructure/ECommerce.Infrastructure.csproj"
             },
-            "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj": {
-              "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj"
-            },
             "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain.csproj": {
               "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Domain/ECommerce.Domain.csproj"
+            },
+            "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj": {
+              "projectPath": "/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Helpers/ECommerce.Helpers.csproj"
             }
           }
         }
