@@ -24,39 +24,18 @@ namespace ECommerce.Application.Services
         public User Authenticate(string username, string password)
         {
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
-            {
+                throw new Exception(Errors.InvalidCredentials);
+
+            var user = _repository.GetByUserName(username);
+
+            if (user == null)
                 throw new Exception(Errors.UserNotFound);
-            }
-            else
-            {
-                var user = _repository.GetByUserName(username);
 
-                if (user == null)
-                    throw new Exception();
-
-                if (!PasswordHelper.VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
-                    throw new Exception(Errors.PasswordDoesNotMatch);
+            if (!SecurityHelper.VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
+                throw new Exception(Errors.PasswordDoesNotMatch);
                 
-                return user;    
-            }
-        }
+            return user;    
 
-        public string GenerateSessionToken(User user, string secret)
-        {
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(secret);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                    new Claim(ClaimTypes.Name, user.Id.ToString())
-                }),
-                Expires = DateTime.UtcNow.AddMinutes(30),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-
-            return tokenHandler.WriteToken(token);
         }
 
         //CREATE
@@ -68,11 +47,8 @@ namespace ECommerce.Application.Services
             if (_repository.GetByUserName(user.Username) != null)
                 throw new Exception(Errors.DuplicateUsername);
 
-            byte[] passwordHash, passwordSalt;
-            PasswordHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
-
-            user.PasswordHash = passwordHash;
-            user.PasswordSalt = passwordSalt;
+            user.SetPassword(password);
+            user.CreationDate = DateTime.UtcNow;
 
             _repository.Create(user);
 
@@ -109,18 +85,16 @@ namespace ECommerce.Application.Services
                     throw new Exception(Errors.DuplicateUsername);
             }
 
-            user.FirstName = userParam.FirstName;
-            user.LastName = userParam.LastName;
-            user.Username = userParam.Username;
+            user.SetFirstName(userParam.FirstName);
+            user.SetLastName(userParam.LastName);
+            user.SetUsername(userParam.Username);
 
             if (!string.IsNullOrWhiteSpace(password))
             {
-                byte[] passwordHash, passwordSalt;
-                PasswordHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
- 
-                user.PasswordHash = passwordHash;
-                user.PasswordSalt = passwordSalt;
+                user.SetPassword(password);
             }
+
+            user.UpdateDate = DateTime.UtcNow;
 
             _repository.Update(user);
         }

@@ -8,6 +8,7 @@ using ECommerce.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using ECommerce.Helpers.Validaton;
 
 namespace ECommerce.Application.Controllers
 {
@@ -37,7 +38,7 @@ namespace ECommerce.Application.Controllers
             
             try
             {
-                var tokenString = _userService.GenerateSessionToken(user, _appSettings.Secret);
+                var tokenString = SecurityHelper.GenerateSessionToken(user.Id, _appSettings.Secret);
 
                 return Ok(new
                 {
