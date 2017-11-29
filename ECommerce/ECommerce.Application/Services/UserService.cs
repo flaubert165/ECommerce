@@ -2,7 +2,7 @@
 using ECommerce.Domain.Services;
 using ECommerce.Domain.Entities;
 using ECommerce.Domain.Repositories;
-using ECommerce.Helpers.Helpers;
+using ECommerce.Helpers.Validaton;
 using System;
 using System.Security.Claims;
 using System.Text;

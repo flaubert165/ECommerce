@@ -1,17 +1,11 @@
 ﻿<Properties StartupConfiguration="{E64702E1-0346-4042-8F51-A3B5F9632398}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Helpers/Resources/Errors.resx">
     <Files>
-      <File FileName="ECommerce.Domain/Entities/User.cs" Line="12" Column="10" />
-      <File FileName="ECommerce.Application/Services/UserService.cs" Line="27" Column="37" />
-      <File FileName="ECommerce Status" />
+      <File FileName="ECommerce.Domain/Entities/User.cs" Line="4" Column="6" />
+      <File FileName="ECommerce.Application/Services/UserService.cs" Line="5" Column="35" />
+      <File FileName="ECommerce.Helpers/Validation/PasswordHelper.cs" Line="2" Column="38" />
+      <File FileName="ECommerce.Helpers/Resources/Errors.resx" Line="16" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="ECommerce" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

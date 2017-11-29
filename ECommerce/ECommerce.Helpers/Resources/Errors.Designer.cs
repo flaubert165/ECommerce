@@ -46,53 +46,5 @@ namespace ECommerce.Helpers.Resources {
                 resourceCulture = value;
             }
         }
-        
-        internal static string DuplicateEmail {
-            get {
-                return ResourceManager.GetString("DuplicateEmail", resourceCulture);
-            }
-        }
-        
-        internal static string InvalidCredentials {
-            get {
-                return ResourceManager.GetString("InvalidCredentials", resourceCulture);
-            }
-        }
-        
-        internal static string InvalidEmail {
-            get {
-                return ResourceManager.GetString("InvalidEmail", resourceCulture);
-            }
-        }
-        
-        internal static string InvalidUserEmail {
-            get {
-                return ResourceManager.GetString("InvalidUserEmail", resourceCulture);
-            }
-        }
-        
-        internal static string InvalidUserName {
-            get {
-                return ResourceManager.GetString("InvalidUserName", resourceCulture);
-            }
-        }
-        
-        internal static string InvalidUserPassword {
-            get {
-                return ResourceManager.GetString("InvalidUserPassword", resourceCulture);
-            }
-        }
-        
-        internal static string PasswordDoesNotMatch {
-            get {
-                return ResourceManager.GetString("PasswordDoesNotMatch", resourceCulture);
-            }
-        }
-        
-        internal static string UserNotFound {
-            get {
-                return ResourceManager.GetString("UserNotFound", resourceCulture);
-            }
-        }
     }
 }

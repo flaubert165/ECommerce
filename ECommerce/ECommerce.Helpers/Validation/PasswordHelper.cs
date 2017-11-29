@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ECommerce.Helpers.Helpers
+namespace ECommerce.Helpers.Validaton
 {
     public class PasswordHelper
     {
