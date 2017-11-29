@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{E64702E1-0346-4042-8F51-A3B5F9632398}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Application/Controllers/UserController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Helpers/Validation/Guard.cs">
     <Files>
-      <File FileName="ECommerce.Application/Controllers/UserController.cs" Line="23" Column="46" />
+      <File FileName="ECommerce.Application/Controllers/UserController.cs" Line="15" Column="16" />
       <File FileName="ECommerce.Application/Services/UserService.cs" Line="19" Column="9" />
       <File FileName="ECommerce.Domain/Entities/User.cs" Line="5" Column="27" />
       <File FileName="ECommerce.Helpers/Validation/Guard.cs" Line="9" Column="42" />
