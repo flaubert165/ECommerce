@@ -6,17 +6,5 @@
 
   <ItemGroup>
     <Folder Include="Validation\" />
-    <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="Resources\Errors.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Errors.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Resources\Errors.Designer.cs">
-      <DependentUpon>Errors.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
 </Project>
