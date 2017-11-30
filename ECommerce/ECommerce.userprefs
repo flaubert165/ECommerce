@@ -1,52 +1,15 @@
 ﻿<Properties StartupConfiguration="{E64702E1-0346-4042-8F51-A3B5F9632398}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Helpers/Validation/Guard.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce Status">
     <Files>
-      <File FileName="ECommerce.Application/Controllers/UserController.cs" Line="15" Column="16" />
-      <File FileName="ECommerce.Application/Services/UserService.cs" Line="19" Column="9" />
-      <File FileName="ECommerce.Domain/Entities/User.cs" Line="5" Column="27" />
-      <File FileName="ECommerce.Helpers/Validation/Guard.cs" Line="9" Column="42" />
-      <File FileName="ECommerce.Helpers/Validation/SecurityHelper.cs" Line="5" Column="38" />
-      <File FileName="ECommerce.Helpers.Tests/GuardTests.cs" Line="10" Column="9" />
-      <File FileName="ECommerce.Application/Startup.cs" Line="42" Column="14" />
+      <File FileName="ECommerce.Application/Controllers/UserController.cs" Line="41" Column="62" />
+      <File FileName="ECommerce.Application/Services/UserService.cs" Line="49" Column="38" />
+      <File FileName="ECommerce.Domain/Services/IUserService.cs" Line="7" Column="6" />
+      <File FileName="ECommerce Status" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="ECommerce" expanded="True">
-            <Node name="ECommerce.Helpers.Tests" expanded="True">
-              <Node name="ECommerce" expanded="True">
-                <Node name="Helpers" expanded="True">
-                  <Node name="Tests" expanded="True">
-                    <Node name="GuardTests" expanded="True">
-                      <Node name="Guard_ForNullOrWithWhiteSpaces_Error_WhenIsNull" selected="True" />
-                    </Node>
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-            <Node name="ECommerce.Infrastructure.Tests" expanded="True">
-              <Node name="ECommerce" expanded="True">
-                <Node name="Infrastructure" expanded="True">
-                  <Node name="Tests" expanded="True">
-                    <Node name="UserRepositoryTest" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/UserController.cs" relfile="ECommerce.Application/Controllers/UserController.cs" line="43" column="1" />
-      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/UserController.cs" relfile="ECommerce.Application/Controllers/UserController.cs" line="41" column="1" />
-      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/UserController.cs" relfile="ECommerce.Application/Controllers/UserController.cs" line="36" column="1" />
-      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/UserController.cs" relfile="ECommerce.Application/Controllers/UserController.cs" line="34" column="1" />
-      <Breakpoint file="/Users/italosantana/Projects/flaubert165/ECommerce/ECommerce/ECommerce.Application/Controllers/UserController.cs" relfile="ECommerce.Application/Controllers/UserController.cs" line="25" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

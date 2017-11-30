@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using AutoMapper;
+using ECommerce.Domain.Repositories;
+using ECommerce.Infrastructure.Repositories;
 
 namespace ECommerce.Application
 {
@@ -27,6 +29,7 @@ namespace ECommerce.Application
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
+            
             var connection = Configuration["DbConnection:MySqlConnectionString"];
             services.AddDbContext<MySQLDataContext>(options =>
                 options.UseMySql(connection)
@@ -60,17 +63,21 @@ namespace ECommerce.Application
             });
 
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseCors(x => x
-                .AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader()
-                .AllowCredentials());
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddDebug().AddConsole();
 
+            app.UseCors(x => x
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials());
+          
             app.UseAuthentication();
             app.UseMvc();
         }

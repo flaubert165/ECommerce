@@ -1,9 +1,9 @@
 ﻿using System;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using System.IdentityModel.Tokens.Jwt;
-using Microsoft.IdentityModel.Tokens;
 using ECommerce.Helpers.Resources;
+using Microsoft.IdentityModel.Tokens;
 
 namespace ECommerce.Helpers.Validation
 {
@@ -27,11 +27,11 @@ namespace ECommerce.Helpers.Validation
 
         public static bool VerifyPasswordHash(string password, byte[] storedHash, byte[] storedSalt)
         {
-            Guard.ForNullOrEmpty(password, Errors.NullUserPassword);
-            Guard.ForNullOrStringWithWhiteSpaces(password, Errors.InvalidUserPassword);
+            //Guard.ForNullOrEmpty(password, Errors.NullUserPassword);
+            //Guard.ForNullOrStringWithWhiteSpaces(password, Errors.InvalidUserPassword);
 
-            //if (password == null) throw new ArgumentNullException("password");
-            //if (string.IsNullOrWhiteSpace(password)) throw new ArgumentException("Value cannot be empty or whitespace only string.", "password");
+            if (password == null) throw new ArgumentNullException("password");
+            if (string.IsNullOrWhiteSpace(password)) throw new ArgumentException("Value cannot be empty or whitespace only string.", "password");
             if (storedHash.Length != 64) throw new ArgumentException("Invalid length of password hash (64 bytes expected).", "passwordHash");
             if (storedSalt.Length != 128) throw new ArgumentException("Invalid length of password salt (128 bytes expected).", "passwordHash");
 
@@ -64,5 +64,6 @@ namespace ECommerce.Helpers.Validation
 
             return tokenHandler.WriteToken(token);
         }
+
     }
 }

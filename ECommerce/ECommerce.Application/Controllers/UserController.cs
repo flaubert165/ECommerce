@@ -39,7 +39,7 @@ namespace ECommerce.Application.Controllers
             try
             {
                 var tokenString = SecurityHelper.GenerateSessionToken(user.Id, _appSettings.Secret);
-
+                   
                 return Ok(new
                 {
                     Id = user.Id,
