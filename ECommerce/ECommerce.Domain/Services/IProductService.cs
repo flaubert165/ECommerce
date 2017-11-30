@@ -5,12 +5,12 @@ namespace ECommerce.Domain.Services
 {
     public interface IProductService
     {
-        List<Product> Get();
+        List<Product> GetAll();
         List<Product> Get(int skip, int take);
         List<Product> GetOutOfStock();
-        Product Get(int id);
+        Product GetById(int id);
         Product Create(Product product);
-        Product Update(Product product);
-        Product Delete(int id);
+        void Update(Product product);
+        void Delete(Product id);
     }
 }

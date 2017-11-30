@@ -9,10 +9,10 @@ namespace ECommerce.Infrastructure.Tests.Data
         {
             return new List<User>
             {
-                new User{Id = 1, Username = "bla", FirstName = "bbla", LastName = "blablba"},
-                new User{Id = 2, Username = "bla", FirstName = "bbla", LastName = "blablba"},
-                new User{Id = 3, Username = "bla", FirstName = "bbla", LastName = "blablba"},
-                new User{Id = 4, Username = "bla", FirstName = "bbla", LastName = "blablba"}
+                new User("bla", "bbla", "blablba"),
+                new User("bla", "bbla", "blablba"),
+                new User("bla", "bbla", "blablba"),
+                new User("bla", "bbla", "blablba")
             };
         }
     }

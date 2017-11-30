@@ -1,5 +1,4 @@
-﻿using System;
-namespace ECommerce.Domain.Enums
+﻿namespace ECommerce.Domain.Enums
 {
     public enum EOrderStatus
     {

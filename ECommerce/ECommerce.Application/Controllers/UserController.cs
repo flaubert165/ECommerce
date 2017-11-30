@@ -99,6 +99,7 @@ namespace ECommerce.Application.Controllers
             try
             {
                 _userService.Update(user, userDto.Password);
+
                 return Ok();
             }
             catch (Exception ex)

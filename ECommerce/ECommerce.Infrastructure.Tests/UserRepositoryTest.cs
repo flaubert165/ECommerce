@@ -18,7 +18,7 @@ namespace ECommerce.Infrastructure.Tests
         [TestMethod]
         public void Create()
         {
-            var user = new User { Id = 5, Username = "ble", FirstName = "blebleble", LastName = "blebleble" };
+            var user = new User("bla", "bbla", "blablba");
 
             var totalBeforeInsert = _repository.GetAll().Count;
             var userSuccecedAdded = _repository.Create(user);
@@ -28,12 +28,12 @@ namespace ECommerce.Infrastructure.Tests
             Assert.AreNotEqual(totalBeforeInsert, totalAfterInsert);
         }
 
-        [TestMethod]
+        /*[TestMethod]
         public void GetById()
         {
             var user = _repository.GetById(1);
             Assert.AreEqual(user.Id, 1);
-        }
+        }*/
 
         [TestMethod]
         public void GetAll()
@@ -46,7 +46,7 @@ namespace ECommerce.Infrastructure.Tests
         [TestMethod]
         public void Update()
         {
-            var user = new User { Id = 4, Username = "ble", FirstName = "blebleble", LastName = "blebleble" };
+            var user = new User("bla", "bbla", "blablba");
             var totalBeforeInsert = _repository.GetAll().Count;
             _repository.Update(user);
             var totalAfterInsert = _repository.GetAll().Count;

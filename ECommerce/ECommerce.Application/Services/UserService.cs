@@ -5,10 +5,6 @@ using ECommerce.Domain.Repositories;
 using ECommerce.Helpers.Validation;
 using ECommerce.Helpers.Resources;
 using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Text;
-using Microsoft.IdentityModel.Tokens;
-using System.Security.Claims;
 
 namespace ECommerce.Application.Services
 {
@@ -37,7 +33,6 @@ namespace ECommerce.Application.Services
             return user;    
 
         }
-
 
         //CREATE
         public User Create(User user, string password)

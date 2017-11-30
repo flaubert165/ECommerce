@@ -7,10 +7,10 @@ namespace ECommerce.Domain.Repositories
 {
     public interface IRepository<T>
     {
+        T Create(T entity);
         IQueryable<T> Query(Expression<Func<T, bool>> filter);
         List<T> GetAll();
         T GetById(int id);
-        T Create(T entity);
         void Update(T entity);
         void Delete(int id);
     }
