@@ -52,8 +52,10 @@ namespace ECommerce.Application.Services
             _repository.Update(product);
         }
 
-        public void Delete(Product product)
+        public void Delete(int id)
         {
+            var product = _repository.GetById(id);
+
             if (product == null)
                 throw new Exception();
             

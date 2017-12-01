@@ -11,7 +11,7 @@ namespace ECommerce.Domain.Repositories
         List<Product> Get(int skip, int take);
         List<Product> GetOutOfStock();
         void Update(Product product);
-        void Delete(Product product);
+        void Delete(Product id);
 
     }
 }

@@ -11,6 +11,6 @@ namespace ECommerce.Domain.Services
         Product GetById(int id);
         Product Create(Product product);
         void Update(Product product);
-        void Delete(Product id);
+        void Delete(int id);
     }
 }

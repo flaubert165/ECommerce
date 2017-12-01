@@ -76,11 +76,9 @@ namespace ECommerce.Application.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete([FromBody]ProductDto productDto)
+        public IActionResult Delete(int  id)
         {
-            var product = _mapper.Map<Product>(productDto);
-
-            _productService.Delete(product);
+            _productService.Delete(id);
 
             return Ok();
         }

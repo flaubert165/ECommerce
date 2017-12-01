@@ -4,6 +4,7 @@ namespace ECommerce.Domain.Dtos
 {
     public class ProductDto
     {
+        public int Id { get; set; }
         public string Title { get; private set; }
         public string Description { get; private set; }
         public decimal Price { get; private set; }
