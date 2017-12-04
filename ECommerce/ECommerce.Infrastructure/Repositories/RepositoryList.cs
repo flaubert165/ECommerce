@@ -24,9 +24,9 @@ namespace ECommerce.Infrastructure.Repositories
             return entity;
         }
 
-        public void Delete(int id)
+        public void Delete(T entity)
         {
-            _list.Remove(GetById(id));
+            _list.Remove(entity);
         }
 
         public List<T> GetAll()

@@ -58,7 +58,7 @@ namespace ECommerce.Application.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody]UserDto productDto)
+        public IActionResult Update(int id, [FromBody]ProductDto productDto)
         {
             var product = _mapper.Map<Product>(productDto);
             product.Id = id;

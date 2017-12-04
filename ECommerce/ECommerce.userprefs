@@ -1,53 +1,8 @@
 ﻿<Properties StartupConfiguration="{E64702E1-0346-4042-8F51-A3B5F9632398}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce Status">
     <Files>
-      <File FileName="ECommerce.Application/Controllers/UserController.cs" Line="64" Column="38" />
-      <File FileName="ECommerce.Application/Controllers/ProductController.cs" Line="76" Column="10" />
-      <File FileName="ECommerce.Application/Services/ProductService.cs" Line="62" Column="1" />
-      <File FileName="ECommerce.Domain/Repositories/IProductRepository.cs" Line="14" Column="28" />
-      <File FileName="ECommerce.Infrastructure/Repositories/ProductRepository.cs" Line="56" Column="1" />
-      <File FileName="ECommerce.Domain/Services/IProductService.cs" Line="14" Column="14" />
-      <File FileName="ECommerce.Domain/Services/IUserService.cs" Line="13" Column="14" />
-      <File FileName="ECommerce.Domain/Dtos/UserDto.cs" Line="5" Column="9" />
       <File FileName="ECommerce Status" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="ECommerce" expanded="True">
-            <Node name="ECommerce.Domain.Tests" expanded="True">
-              <Node name="ECommerce" expanded="True">
-                <Node name="Domain" expanded="True">
-                  <Node name="Tests" expanded="True">
-                    <Node name="Entities" expanded="True">
-                      <Node name="UserTests" expanded="True" />
-                    </Node>
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-            <Node name="ECommerce.Helpers.Tests" expanded="True">
-              <Node name="ECommerce" expanded="True">
-                <Node name="Helpers" expanded="True">
-                  <Node name="Tests" expanded="True">
-                    <Node name="GuardTests" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-            <Node name="ECommerce.Infrastructure.Tests" expanded="True" selected="True">
-              <Node name="ECommerce" expanded="True">
-                <Node name="Infrastructure" expanded="True">
-                  <Node name="Tests" expanded="True">
-                    <Node name="UserRepositoryTest" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

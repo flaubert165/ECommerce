@@ -12,6 +12,8 @@ namespace ECommerce.Helpers
             CreateMap<UserDto, User>();
             CreateMap<Product, ProductDto>();
             CreateMap<ProductDto, Product>();
+            CreateMap<Category, CategoryDto>();
+            CreateMap<CategoryDto, Category>();
         }
     }
 }
